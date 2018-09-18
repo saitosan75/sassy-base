@@ -1,9 +1,17 @@
 // VARIABLES 
 
-$type-base: Helvetica, Arial, sans-serif;
-$type-heading: Georgia, serif;
+$type-base: 'Lora', serif;
+$type-heading: 'Muli', sans-serif;
 $type-line-width: 38em;
-$type-color-body: black;
+
+//TYPE COLORS
+$type-color-body: #707070;
+$type-color-headline: #000000;
+$type-color-subheadline: #7E7E7E;
+$type-color-meta: #B1B1B1;
+
+//COLORS
+
 
 @import "partials/typography";
 @import "partials/toc";

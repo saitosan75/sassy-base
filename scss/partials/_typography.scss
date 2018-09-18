@@ -5,6 +5,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $type-heading;
+    color: $type-color-headline;
     margin: 0 0 0.5em 0;
 }
 
@@ -24,3 +25,31 @@ p {
     font-family: $type-base;
 }
 
+/* horizontal line */
+hr {
+    border: 0;
+    height: 1px;
+    margin: 3em 0;
+    background: #ddd;
+}
+
+/* HELPERS */
+.headline {
+    font-size: 4em;
+    color: $type-color-headline;
+    margin: 0;
+}
+
+.subheadline {
+    font-family: $type-base;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: $type-color-subheadline;
+    margin: 0.25em 0 0.5em 0;
+}
+
+.meta {
+    font-size: 0.875em;
+    color: $type-color-meta;
+    margin-bottom: 1.5em;
+}
