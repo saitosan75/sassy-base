@@ -1,0 +1,6 @@
+/* COMPONENTS */
+a.button,
+.button {
+  display: inline-block;
+  padding: 1em;
+  background: red; }

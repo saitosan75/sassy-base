@@ -1,7 +1,7 @@
 // VARIABLES 
 
 $type-base: 'Lora', serif;
-$type-heading: 'Muli', sans-serif;
+$type-heading: 'Muli 700', sans-serif;
 $type-line-width: 38em;
 
 //TYPE COLORS
@@ -10,8 +10,18 @@ $type-color-headline: #000000;
 $type-color-subheadline: #7E7E7E;
 $type-color-meta: #B1B1B1;
 
+
 //COLORS
+$link-color: #FF9C5F;
+$link-color-dark: #F17224;
+
+//BREAKPOINTS
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1250px;
 
 
 @import "partials/typography";
 @import "partials/toc";
+@import "partials/components";
+@import "partials/layout";

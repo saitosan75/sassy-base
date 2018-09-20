@@ -1,0 +1,41 @@
+/* LAYOUT */
+
+* {box-sizing: border-box} 
+
+//SMALL SCREENS AND UP (MOBILE-FIRST)
+body {
+    font-size: 87.5%; /* 14px */
+    margin: 0;
+    padding: 4%;
+}
+.container {
+    margin: 0 auto;
+    padding: 2% 4%;
+}
+
+//MEDIUM SCREENS (TABLET)
+@media (min-width: $breakpoint-small) {
+    body {
+        font-size: 100%; /*16px */
+    }
+}
+
+//LARGE SCREENS (NOTEBOOKS)
+@media (min-width: $breakpoint-medium) {
+
+    .container {
+        max-width: $breakpoint-medium - 50;
+        padding: 2% 50px;
+    }
+}
+
+//EXTRA LARGE SCREENS (DESKTOP**)
+@media (min-width: $breakpoint-large) {
+    body {
+        font-size: 112.5%; /*18px */
+    }
+    
+    .container {
+        max-width: $breakpoint-large - 50;
+    }
+}

@@ -3,7 +3,7 @@ body {
   color: #707070; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Muli", sans-serif;
+  font-family: "Muli 700", sans-serif;
   color: #000000;
   margin: 0 0 0.5em 0; }
 
@@ -44,6 +44,10 @@ p {
   max-width: 38em;
   font-family: "Lora", serif; }
 
+.button,
+.alt {
+  font-family: "Muli 700", sans-serif; }
+
 /* horizontal line */
 hr {
   border: 0;
@@ -73,7 +77,80 @@ hr {
 CSS TABLE OF CONTENTS
 
 #TYPOGRAPHY
-#BUTTONS
+    #TYPOGRAPHIC SCALE
+    #TYPE SPECIMEN
+#CONMPONENTS
+    #BUTTONS
 #LAYOUTS
-    #GRID
+    #MEDIA QUERIES
+    #CONTAINER
+    # RESPONSIVE BODY TYPE
+    
 ------------------------ */
+/* COMPONENTS */
+a.button,
+.button,
+.alt {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 1em;
+  display: inline-block;
+  background-color: #FF9C5F;
+  border: 1px solid #FF9C5F;
+  color: #fff;
+  padding: 1.25em 2.5em;
+  border-radius: 3em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-decoration: none; }
+  a.button.alt,
+  .button.alt,
+  .alt.alt {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #F17224;
+    color: #F17224; }
+  a.button:hover,
+  .button:hover,
+  .alt:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #FF9C5F;
+    color: #FF9C5F; }
+  a.button.alt:hover,
+  .button.alt:hover,
+  .alt.alt:hover {
+    background-color: #F17224;
+    color: #fff;
+    border: 1px solid #F17224; }
+
+/* LAYOUT */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 87.5%;
+  /* 14px */
+  margin: 0;
+  padding: 4%; }
+
+.container {
+  margin: 0 auto;
+  padding: 2% 4%; }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 100%;
+    /*16px */ } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 942px;
+    padding: 2% 50px; } }
+
+@media (min-width: 1250px) {
+  body {
+    font-size: 112.5%;
+    /*18px */ }
+  .container {
+    max-width: 1200px; } }

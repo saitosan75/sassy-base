@@ -25,6 +25,11 @@ p {
     font-family: $type-base;
 }
 
+.button,
+.alt {
+    font-family: $type-heading;
+}
+
 /* horizontal line */
 hr {
     border: 0;
