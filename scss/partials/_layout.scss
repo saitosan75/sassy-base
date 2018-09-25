@@ -42,12 +42,13 @@ body {
 
 /* GRID */
 
-$grid-column-gap: 1em;
+$grid-column-gap: 1%;
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -$grid-column-gap;
+    margin-left:-$grid-column-gap;
+    margin-right:-$grid-column-gap;
     align-content: center;
     justify-content: center;
 }
@@ -55,7 +56,7 @@ $grid-column-gap: 1em;
 .row > .column {
     flex-grow: 1;
     flex-basis: 11em;
-    margin: 0 $grid-column-gap $grid-column-gap+3 $grid-column-gap;
+    margin: 0 $grid-column-gap $grid-column-gap+2 $grid-column-gap;
 }
 
 //FOR DEMO PURPOSES
