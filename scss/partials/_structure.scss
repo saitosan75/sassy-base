@@ -1,0 +1,27 @@
+/* SITE STRUCTURE */
+header {
+    background: $header-footer;
+    display: flex;
+    justify-content: space-between;
+    
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: $type-heading;
+    }
+
+    .site-navigation {
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        a {
+            display: block;
+            padding: 1em;
+        }
+
+        a:hover {
+            color: rgba(255, 255, 255, 0.692);
+        }
+    }
+}

@@ -131,8 +131,7 @@ a.button,
 body {
   font-size: 87.5%;
   /* 14px */
-  margin: 0;
-  padding: 4%; }
+  margin: 0; }
 
 .container {
   margin: 0 auto;
@@ -182,3 +181,27 @@ body {
   padding: 1em;
   background: #fff09e;
   text-align: center; }
+
+/* SITE STRUCTURE */
+header {
+  background: #FDBB92;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  header a {
+    color: white;
+    text-decoration: none;
+    font-family: "Muli 700", sans-serif; }
+  header .site-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; }
+  header .site-navigation a {
+    display: block;
+    padding: 1em; }
+  header .site-navigation a:hover {
+    color: rgba(255, 255, 255, 0.692); }
