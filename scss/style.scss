@@ -15,7 +15,8 @@ $type-color-meta: #B1B1B1;
 $link-color: #FF9C5F;
 $link-color-dark: #F17224;
 $column-color: rgb(255, 240, 158);
-$header-footer: #FDBB92;
+$header-footer: #FF9C5F;
+$hero-background-color: rgb(255, 246, 197);
 
 //BREAKPOINTS
 $breakpoint-small: 768px;
@@ -28,3 +29,4 @@ $breakpoint-large: 1250px;
 @import "partials/components";
 @import "partials/layout";
 @import "partials/structure";
+@import "partials/media";

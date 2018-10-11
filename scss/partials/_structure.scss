@@ -69,3 +69,32 @@
 section {
     padding: 3em 0;
 }
+
+.hero {
+    background-color: $hero-background-color;
+    padding: 5em 0;
+    //text-align: center;
+    //p {
+    //    max-width: none;
+    //    margin-left: auto;
+    //    margin-right: aito;
+    //}
+}
+
+.sectionhead {
+    font-family: $type-base;
+    font-size: 1em;
+    font-weight: none;
+    font-style: italic;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionhead:after {
+    content: "";
+    display: block;
+    border-bottom: 3px dotted $link-color-dark;
+    width: 100px;
+    margin: 1em auto 3em auto;
+}

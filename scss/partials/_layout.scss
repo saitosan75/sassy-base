@@ -50,13 +50,28 @@ $grid-column-gap: 2%;
     margin-right:-$grid-column-gap/2;
     align-content: center;
     justify-content: center;
+    @media (max-width:$breakpoint-small -1){
+        justify-content: flex-start;
+    }
+    &.swapped {
+        flex-direction: row-reverse;
+    } 
 }
 
 .row > .column {
     flex-grow: 1;
     flex-basis: 11em;
     margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
+    @media (max-width: $breakpoint-small -1) {
+        flex-grow: 0;
+        flex-basis: $breakpoint-small;
+    }
+    &.one-half {
+        width: 50 - $grid-column-gap;
+    }
 }
+
+   
 
 //FOR DEMO PURPOSES
 .demo .column {
