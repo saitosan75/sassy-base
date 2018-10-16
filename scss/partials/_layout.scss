@@ -50,7 +50,7 @@ $grid-column-gap: 2%;
     margin-right:-$grid-column-gap/2;
     align-content: center;
     justify-content: center;
-    @media (max-width:$breakpoint-small -1){
+    @media (max-width:$breakpoint-small - 1){
         justify-content: flex-start;
     }
     &.swapped {
@@ -60,14 +60,30 @@ $grid-column-gap: 2%;
 
 .row > .column {
     flex-grow: 1;
-    flex-basis: 11em;
     margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
-    @media (max-width: $breakpoint-small -1) {
+    @media (max-width: $breakpoint-small - 1) {
         flex-grow: 0;
         flex-basis: $breakpoint-small;
     }
     &.one-half {
         width: 50 - $grid-column-gap;
+    }
+
+    &.one-third{
+        width: 33.3333 - $grid-column-gap;
+    }
+
+    &.one-fourth {
+        width: 25 - $grid-column-gap;
+    }
+
+    @media (min-width: $breakpoint-small) {
+        &.centered {
+            flex-grow: 0;
+            //width:50%;
+            margin-right: 4%;
+            margin-left: 4%;
+        }
     }
 }
 
@@ -78,5 +94,6 @@ $grid-column-gap: 2%;
     padding: 1em;
     background: $column-color;
     text-align: center;
+    //flex-grow: 0;
 }
 
